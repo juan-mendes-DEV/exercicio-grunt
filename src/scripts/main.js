@@ -8,6 +8,6 @@ document.addEventListener('DOMContentLoaded', function(){
         numeroaleatorio = Math.floor(numeroaleatorio + 1);
 
         document.getElementById('resultado-valor').innerText = numeroaleatorio;
-
+        document.querySelector('.resultado').style.display = 'block';
     })
 })

@@ -1,1 +1,77 @@
+@import "variaveis.less";
+.paddin{
+    margin-bottom: 1em;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: @corfundo;
+    font-family: @fonttexto;
+}
 
+.container{
+    height: 100%;
+    max-width: 1024px;
+    width: 100%;
+    margin:0 auto ;
+    margin-top: 3em;
+
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        border: 4px outset @cordetalhes;
+        padding-bottom: 3em;
+        border-radius: 10%;
+
+        
+        form{
+            label{
+                display: block;
+                margin-bottom: 1em;
+                font-size: 20px
+            }
+            input{
+                .paddin();
+                text-align: center;
+            }
+            button{
+                .paddin();
+                background-color: @corbutton;
+                width: 18%;
+
+                &:hover{
+                    background-color: @corhover;
+                    box-shadow: 4px 4px 4px @corbutton;
+                }
+                
+            }
+        }
+        h1{
+            color: @cortitulo;
+            font-family: @fonttitulo;
+            margin-top: 2em;
+            margin-bottom: 1em;}
+    
+    }
+}
+.resultado{
+    display: none;
+    color: @corhover;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+#resultado-valor{
+    color: @cordetalhes;
+}

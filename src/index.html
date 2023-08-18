@@ -5,20 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>grunt</title>
     <link rel="stylesheet" href="@@ENDERECO_DO_CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
     <main>
         <h1>sorteador</h1>
         <form id="numero-sorteador">
             <div>
-                <label for="numero-maximo">numero maximo</label>
+                <label for="numero-maximo">Numero Maximo</label>
                 <input type="number" id="numero-maximo" required min="2" value="2" step="1">
             </div>
             <button type="submit">sortear numero</button>
         </form>
-    </main>
-    <div class="resultado">
+        <div class="resultado">
         o numero sorteado foi: <span id="resultado-valor"></span>
+    </div>
+    </main>
+
     </div>
 
     <script src="@@ENDERECO_DO_JS"></script>
